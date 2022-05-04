@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arcadia-fhir-api
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: arcadia-fhir-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: arcadia-fhir-api
+    spec:
+      containers:
+      - image: 427804588164.dkr.ecr.us-east-1.amazonaws.com/arcadia.io/arcadia-fhir-api:20220425-3f6be38
+        name: arcadia-fhir-api
+        ports:
+        - containerPort: 8081
+      restartPolicy: Always 
