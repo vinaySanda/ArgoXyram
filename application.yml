@@ -12,7 +12,7 @@
       path: dev
     destination:
       server: https://kubernetes.default.svc
-      namespace: mynewapp
+      namespace: fhirapi
 
     syncPolicy:
       syncOptions:
