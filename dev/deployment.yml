@@ -12,6 +12,8 @@ spec:
       labels:
         app.kubernetes.io/name: arcadia-fhir-api
     spec:
+      nodeSelector
+        eks.amazonaws.com/nodegroup: provisioning-eks-cluster-01_tgw
       containers:
       - image: 427804588164.dkr.ecr.us-east-1.amazonaws.com/arcadia.io/arcadia-fhir-api:20220425-3f6be38
         name: arcadia-fhir-api
