@@ -15,7 +15,7 @@ spec:
       nodeSelector
         eks.amazonaws.com/nodegroup: provisioning-eks-cluster-01_tgw
       containers:
-      - image: 427804588164.dkr.ecr.us-east-1.amazonaws.com/arcadia.io/arcadia-fhir-api:20220425-3f6be38
+      - image: 498769975733.dkr.ecr.us-east-1.amazonaws.com/arcadia.io/arcadia-fhir-api:20220422-22e824a
         name: arcadia-fhir-api
         ports:
         - containerPort: 8081
